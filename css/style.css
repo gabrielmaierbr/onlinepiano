@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #222;
+  margin: 0;
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+.piano {
+  display: flex;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.key {
+    width: 60px;
+    height: 200px;
+    border: 1px solid #000;
+    background: white;
+    margin: 0 2px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+.key.black {
+    width: 40px;
+    height: 120px;
+    background: black;
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+.active {
+    background: yellow !important;
+}
+
+.musicas {
+    margin-top: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.musicas h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #ffd700;
+}
+
+.musica {
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.musica h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #87cefa;
+}
+
+.musica p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.referencias {
+    margin-top: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.referencias h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #90ee90;
+}
+
+.referencias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.referencias li {
+    margin: 5px 0;
+    font-size: 16px;
+}
